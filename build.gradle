@@ -3,23 +3,21 @@ buildscript {
     ext.kotlin_version = "1.4.32"
     repositories {
         google()
-        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.2.2"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
     }
 }
 
 allprojects {
     repositories {
         google()
-        jcenter()
-        mavenCentral()
         maven { url 'https://trailze-android-sdk-1.s3.amazonaws.com/releases' }
+        maven { url "https://plugins.gradle.org/m2/" }
         maven { url 'https://csspeechstorage.blob.core.windows.net/maven/' }
     }
 }
