@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.trailze.sdk.TRLMainActivity
 import com.trailze.sdk.TrailzeApp
 import com.trailze.sdk.TrailzeOptions
+import com.trailze.sdk.UnitSystem
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         val op = TrailzeOptions(
             apiToken = BuildConfig.TRAILZE_ACCESS_KEY,
             mapboxToken = BuildConfig.MAPBOX_ACCESS_TOKEN,
+            unitSystem = UnitSystem.IMPERIAL
         )
 
         TrailzeApp.configure(op)
