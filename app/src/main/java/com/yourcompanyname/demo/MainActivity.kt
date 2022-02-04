@@ -26,7 +26,12 @@ class MainActivity : AppCompatActivity() {
         val op = TrailzeOptions(
             apiToken = BuildConfig.TRAILZE_ACCESS_KEY,
             mapboxToken = BuildConfig.MAPBOX_ACCESS_TOKEN,
-            unitSystem = UnitSystem.IMPERIAL
+            userId = "demo",
+            unitSystem = UnitSystem.IMPERIAL,
+            enableGeocodingFocus = true,
+            baseRouteColor = arrayOf(198f, 202f, 247f, 1f),
+            safeRouteColor = arrayOf(140f, 151f, 241f, 1f),
+            dangerousRouteColor = arrayOf(255f, 97f, 97f, 1f),
         )
 
         TrailzeApp.configure(op)
