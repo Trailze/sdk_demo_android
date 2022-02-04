@@ -2,7 +2,7 @@
 A barebones demo app to get started with the Trailze SDK on Android
 
 ## Installation instructions
-- Make sure you have your Mapbox and Trailze access keys.
+- Make sure you have your Mapbox and Trailze access keys. You can get your free Trailze key here: https://account.trailze.com.
 - Clone this repo.
 - Create a `gradle.properties` file with the following settings and fill in your Trailze and Mapbox keys.
 ```gradle
